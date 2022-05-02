@@ -1,0 +1,126 @@
+body {
+    background-color: #ECFDF5;
+  }
+  
+  .heading,
+  .pagebreak,
+  .passwords {
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .heading__title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.1;
+    margin-top: 110px;
+  }
+  
+  .heading__title--emphasis {
+    color: #34D399;
+    display: block;
+  }
+  
+  .heading__tagline {
+    font-size: 20px;
+    color: #6B7280;
+    margin-top: 10px;
+  }
+  
+  .heading__input-label {
+    margin-top: 20px;
+    display: block;
+    color: #fff;
+  }
+  
+  .heading__input {
+    max-width: 100px;
+    display: block;
+    outline: 1px solid #6b7280;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin: 4px 0;
+    color: #34d399;
+    background-color: #273549;
+    
+    &::placeholder {
+      color: rgba(#fff, 0.5);
+    }
+  }
+  
+  .heading__btn {
+    padding: 9px 17px;
+    background-color: #34d399;
+    border-radius: 6px;
+    margin-top: 50px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .pagebreak {
+    height: 1px;
+    margin-top: 35px;
+    background-color: #D5D4D8;
+  }
+  
+  .passwords__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-row: 1fr 1fr;
+    margin-top: 35px;
+  }
+  
+  .passwords__list-item {
+    background-color: #273549;
+    padding: 4px;
+    margin-top: 8px;
+    display: inline-flex;
+    border-radius: 6px;
+    color: #5DEF92;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .passwords__password {
+    text-align: center;
+    justify-self: center;
+    padding: 0 8px;
+  }
+  
+  .passwords__btn {
+    background-color: rgba(#5DEF92, 0.15);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    &:hover,
+    &:focus {
+      background-color: rgba(#5def92, 1);
+    }
+  }
+  
+  .passwords__list-item:nth-of-type(2n+1) {
+    margin-right: 8px;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #1F2937;
+    }
+    
+    .heading__title {
+      color: #fff;
+    }
+    
+    .heading__tagline {
+      color: #9CA3AF;
+    }
+    
+    .pagebreak {
+      background-color: #2F3E53;
+    }
+  }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo - Password Generator</title>
+        <link rel="stylesheet" href="../reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <heading class="heading">
+            <h1 class="heading__title">
+              Generate a <span class="heading__title--emphasis">random password</span>
+            </h1>
+            <p class="heading__tagline">Never use an insecure password again.</p>
+          
+            <label class="heading__input-label" for="length-input">Number of Characters</label>
+            <input class="heading__input" type="number" placeholder="8" id="passwordLength-el">
+            <button class="heading__btn" onclick="displayNewPasswords()">Generate Passwords</button>
+          </heading>
+          <hr class="pagebreak">
+          <div class="passwords">
+            <ul class="passwords__list">
+              <li class="passwords__list-item"><code class="passwords__password" id="password1-el"></code><button class="passwords__btn" onclick="copyPassword(1)">Copy</button></li>
+              <li class="passwords__list-item"><code class="passwords__password" id="password2-el"></code><button class="passwords__btn" onclick="copyPassword(2)">Copy</button></li>
+              <li class="passwords__list-item"><code class="passwords__password" id="password3-el"></code><button class="passwords__btn" onclick="copyPassword(3)">Copy</button></li>
+              <li class="passwords__list-item"><code class="passwords__password" id="password4-el"></code><button class="passwords__btn" onclick="copyPassword(4)">Copy</button></li>
+            </ul>
+          </div>
+    </body>
+</html>
