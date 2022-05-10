@@ -11,11 +11,31 @@
         <p>Thanks for choosing GoodCorp, LLC!</p>
       </header>
       <section>
-        <ul></ul>
+        <!-- <form> -->
+          <span>
+            <label for="customServiceName">Custom Service</label>
+            <input type="text" id="customServiceName" placeholder="Wash Windows">
+          </span>
+          <span>
+            <label for="customServiceValue">Cost in Dollars</label>
+            <input type="text" id="customServiceValue" type="number" placeholder="45">
+          </span>
+          <button id="addCustomService">Add Service</button>
+          <button id="RemoveAllCustomServices">Reset All</button>
+        <!-- </form> -->
+        <ul>
+          <li>
+            <button>Wash Car: $10</button>
+            <button>
+              <span>&times;</span>
+              <span> remove</span>
+            </button>
+          </li>
+        </ul>
       </section>
       <main>
         <table>
-          <caption>Services rendered for {Client Name} by GoodCorp</caption>
+          <caption>Services rendered by GoodCorp</caption>
           <thead>
           <tr>
             <th>Service</th>
@@ -35,9 +55,27 @@
           </tr>
           </tbody>
         </table>
+        <hr>
+        <div>
+          <section>
+            <h2>Notes</h2>
+            <p>We accept cash, credit card, or PayPal</p>
+          </section>
+          <section>
+            <h2>Total Amount</h2>
+            <p>$00</p>
+          </section>
+        </div>
       </main>
       <footer>
-        
+        <form action="/">
+          <label for="recipientName">Recipient Name</label>
+          <input type="text" id="recipientName">
+          <label for="recipientEmail">Recipient Email</label>
+          <input type="text" id="recipientEmail" type="email">
+          <button>Update</button>
+        </form>
+        <a href="mailto:address@example.com">Send Invoice</a>
       </footer>
 
       <script type="text/javascript" src="script.js"></script>

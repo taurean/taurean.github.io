@@ -1,0 +1,11 @@
+input {
+  outline: 1px solid red;
+  padding: 4px;
+}
+
+button,
+a {
+  background-color: whitesmoke;
+  border: 1px solid silver;
+  padding: 4px;
+}
