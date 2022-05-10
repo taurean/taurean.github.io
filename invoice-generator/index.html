@@ -21,9 +21,9 @@
             <input type="text" id="customServiceValue" type="number" placeholder="45">
           </span>
           <button id="addCustomService">Add Service</button>
-          <button id="RemoveAllCustomServices">Reset All</button>
+          <button id="removeAllCustomServices">Reset All</button>
         <!-- </form> -->
-        <ul>
+        <ul id="allServicesAvailableBtnList">
           <li>
             <button>Wash Car: $10</button>
             <button>
@@ -46,7 +46,8 @@
           <tr>
             <td>
               <span>Service</span>
-              <button>Remove</button>
+              <button><span>&times;</span>
+              <span> remove</span></button>
             </td>
             <td>
               <span>$</span>
